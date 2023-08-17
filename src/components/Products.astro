@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets"
+import Masoor from "../assets/masoor.png"
+import Groundnut from "../assets/groundnut.png"
+import Kabuli from "../assets/kabuli-chana.png"
+---
+
+<div class="overflow-hidden p-[1.125em] text-center">
+  <h2
+    class="mb-8 text-center text-[2rem] leading-normal sm:text-5xl md:text-[5rem]"
+  >
+    Our Products
+  </h2>
+  <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <section class="space-between flex items-center gap-8 sm:flex-col">
+      <div>
+        <Image class="object-cover object-center" src={Masoor} alt="Masoor" />
+      </div>
+      <div class="border border-[#623e2a] p-[0.625em]">
+        <h3>MASOOR DAAL</h3>
+        <p>Good Sources Of Carbohydrates, Proteins, Fibres And Vitamins</p>
+      </div>
+    </section>
+
+    <section class="space-between flex items-center gap-8 sm:flex-col">
+      <div>
+        <Image
+          class="object-cover object-center"
+          src={Groundnut}
+          alt="Groundnut"
+        />
+      </div>
+      <div class="border border-[#623e2a] p-[0.625em]">
+        <h3>GROUNDNUT</h3>
+        <p>
+          Groundnut Contain Potassium, Phosphorous, Magnesium, And B Vitamins.
+        </p>
+      </div>
+    </section>
+
+    <section class="space-between flex items-center gap-8 sm:flex-col">
+      <div>
+        <Image
+          class="object-cover object-center"
+          src={Kabuli}
+          alt="Kabuli-Chana"
+        />
+      </div>
+      <div class="border border-[#623e2a] p-[0.625em]">
+        <h3>KABULI CHANA</h3>
+        <p>
+          Kabuli Chana Is Rich In Sources Of Minerals Like Iron, Potassium And
+          Magnesium.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>

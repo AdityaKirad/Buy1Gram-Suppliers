@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets"
+import BlackSoyabean from "../assets/black-soyabean.png"
+---
+
+<div
+  class="relative flex flex-col items-center justify-between sm:flex-row sm:justify-center"
+>
+  <Image
+    class="h-[30%] w-full object-cover object-center sm:h-full sm:w-[30%]"
+    src={BlackSoyabean}
+    alt="Black-Soyabean"
+  />
+  <h2
+    class="absolute top-8 z-10 text-center text-[2rem] sm:text-5xl md:text-[5rem]"
+  >
+    WHY CHOOSE US
+  </h2>
+  <p class="mx-auto text-center text-[2rem] sm:w-2/5">
+    We Invest A Significant Amount Of Time In Developing Personal Relationship
+    With Both Our Suppliers And Clients And We Are Constantly Working Hard To
+    Maintain Our Reputation.
+  </p>
+  <Image
+    class="h-[30%] w-full object-cover object-center sm:h-full sm:w-[30%]"
+    src={BlackSoyabean}
+    alt="Black-Soyabean"
+  />
+</div>

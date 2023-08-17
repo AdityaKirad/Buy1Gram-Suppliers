@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply hidden;
+    }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        @apply text-[62.5%] antialiased box-border scroll-smooth snap-mandatory snap-y;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        @apply bg-[#EFEBE5] text-[1.6rem] text-black;
+    }
+
+    main>div {
+        @apply snap-start snap-always h-screen;
+    }
+
+    h2,
+    h3 {
+        @apply text-[#623E2A] font-bold;
+    }
+}

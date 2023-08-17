@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets"
+import GreenPulse from "../assets/green-pulses.png"
+---
+
+<div class="p-[1.125em]">
+  <h2 class="mb-8 text-[2rem] sm:text-5xl md:text-[5rem]">ABOUT US</h2>
+  <section class="flex flex-col-reverse gap-8 md:flex-row">
+    <p class="text-justify md:w-1/2">
+      We, Buy One Gram, Jaipur, Rajasthan, Is is a dynamic B2B e-commerce
+      platform that connects suppliers, sales partners, and retailers in a
+      seamless and efficient marketplace. Our platform offers a wide range of
+      products across various categories, providing suppliers and manufacturers
+      with an opportunity to reach a vast network of retailers and expand their
+      market presence. As an intern, it is essential to understand how
+      FreshStock works and the key features and functionalities of our platform.
+    </p>
+    <div class="md:w-1/2">
+      <Image
+        class="object-fit h-full w-full object-center"
+        src={GreenPulse}
+        alt="Green Pulse"
+      />
+    </div>
+  </section>
+</div>

@@ -1,0 +1,60 @@
+---
+import { Image } from "astro:assets"
+import DeliveryBoy from "../assets/delivery-boy.png"
+import Worth from "../assets/worth.png"
+import Box from "../assets/box.webp"
+---
+
+<div class="p-[1.125em] text-center">
+  <h2 class="mb-8 text-center text-[2rem] sm:text-5xl md:text-[5rem]">
+    FACILITY
+  </h2>
+  <div class="grid grid-cols-1 gap-8 sm:grid-cols-3">
+    <section class="flex items-center justify-between gap-8 sm:flex-col">
+      <div>
+        <Image
+          class="object-cover object-center"
+          src={DeliveryBoy}
+          alt="Timely Delivery"
+        />
+      </div>
+      <div>
+        <h3>Timely Delivery</h3>
+        <p>
+          Timely Delivery Of Goods Or Timely Completion Of Services As Stated By
+          Bidder.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex items-center justify-between gap-8 sm:flex-col">
+      <div>
+        <Image
+          class="object-cover object-center"
+          src={Worth}
+          alt="Worth Product"
+        />
+      </div>
+      <div>
+        <h3>Competitive Price</h3>
+        <p>
+          We Try To Keep Our Prices In Line With Each Other And Advertise Our
+          Product To Stand Out In Quality And Features.
+        </p>
+      </div>
+    </section>
+
+    <section class="flex items-center justify-between gap-8 sm:flex-col">
+      <div>
+        <Image class="object-cover object-center" src={Box} alt="Wide Range" />
+      </div>
+      <div>
+        <h3>Wide Range of Products</h3>
+        <p>
+          We Offers A Diverse Selection Of Products Across Multiple Lines Or
+          Categories.
+        </p>
+      </div>
+    </section>
+  </div>
+</div>
