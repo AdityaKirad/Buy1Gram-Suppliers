@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      sans: ["DM Sans", "sans-serif"],
+      sans: ["Roboto", "sans-serif"],
     },
     screens: {
       sm: "40em",

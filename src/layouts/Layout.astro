@@ -1,17 +1,42 @@
 ---
-import "@fontsource/dm-sans"
+import "@fontsource/roboto"
 import "../styles/global.css"
+const title = "Buy1Gram Suppliers"
+const description = "CREATING A NEW WORLD OF B2B E-COMMERCE PLATFORM"
+const image = "/android-chrome-192x192.png"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Buy1Gram Suppliers</title>
-    <meta name="description" content="Astro description" />
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="generator" content={Astro.generator} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.url)} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={new URL(image, Astro.url)} />
+    <meta name="copyright" content="Buy1Gram" />
+    <meta name="language" content="EN" />
+    <meta name="robots" content="index,follow" />
+    <meta name="Classification" content="Business" />
+    <meta name="author" content="buy1gram, buy1gram@gmail.com" />
+    <meta name="owner" content="buy1gram" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body>
     <slot />
